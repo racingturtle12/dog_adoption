@@ -1,0 +1,128 @@
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(81, 68, 68); 
+    height: 90px;
+
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    padding-left: 90px;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 30px 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(103, 73, 73);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(75, 75, 174);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  .logo{
+    float: left;
+    
+    color: pink;
+  }
+
+  form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: #f1f1f1;
+    margin-top: 15px;
+  }
+  
+  form.search button {
+    float: left;
+    width: 5%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  form.search button:hover {
+    background: #0b7dda;
+  }
+  
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .search{
+    box-sizing: border-box;
+  }
+
+  .rescue{
+    float: right;
+    width: 400px;
+    height: 333px;
+    background-color: aliceblue;
+    
+  }
+  .adopapplication{
+    font-family: 'Courier New', Courier, monospace;
+    width: 220px;
+    height: 100px;
+    float: right;
+    background-color: orange;
+    color: white;
+    
+  
+    margin-top: 90px;
+
+  }
+  
