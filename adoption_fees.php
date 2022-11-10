@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="form.css">
 </head>
 <body>
-<?php include 'shownav.php'; ?>
+<?php include 'shownav.php'; 
+  echo shownav();?>
 <br>
 <h2>Fees Include</h2>
 <br>

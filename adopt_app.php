@@ -8,7 +8,8 @@
 </head>
 <body>
     
-<?php require 'shownav.php';?>
+<?php require 'shownav.php';
+  echo shownav();?>
   <form class="search" action="/action_page.php">
     <input type="text" placeholder="Search.." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>

@@ -8,7 +8,8 @@
 </head>
 <body>
     
-<?php require 'shownav.php';?>
+<?php require 'shownav.php';
+  echo shownav();?>
 
 
 

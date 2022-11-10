@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-  <?php include 'shownav.php';?> 
+  <?php include 'shownav.php';
+  echo shownav();?> 
     
 
   <form class="search" action="/action_page.php">

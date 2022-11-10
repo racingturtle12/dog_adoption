@@ -9,7 +9,8 @@
   <title>Login Form</title>
 </head>
 <body>
-<?php require 'shownav.php';?>
+<?php require 'shownav.php';
+  echo shownav();?>
   
   <br>
   <br>
