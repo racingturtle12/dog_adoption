@@ -4,16 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="menu.css">
-<link rel="stylesheet" href="form.css">
 </head>
 <body>
+  <?php require 'shownav.php';?> 
     
-<div class="navbar">
+<!-- <div class="navbar">
     <div>
         <h1 class="logo">Dog haven<span style="color:#359127;"> Web</span> site</h1>
         </div>
   <a href="index.html">Home</a>
-
   <div class="subnav">
     <button class="subnavbtn">Adopt <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
@@ -32,39 +31,31 @@
   </div>
 
     <a href="loginform.html">Login</a>
-  </div>
+  </div> -->
 
   <form class="search" action="/action_page.php">
     <input type="text" placeholder="Search.." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
-<br>
-<h2>Fees Include</h2>
-<br>
-<ul>
-  <li>Health screening and veterinary examination</li>
-  <li>Spay/Neuter</li>
-  <li>Rabies vaccination (if over 4 months old)</li>
-  <li>Distemper combination vaccination</li>
-  <li>Flea treatment and preventative</li>
-  <li>Deworming for intestinal parasites</li>
-  <li>Microchip and registrationn</li>
-  <li>Heartworm test (if over 6 months) and preventative medication</li>
-  <li>Bordetella vaccination</li>
-</ul>  
 
+  <div style=" margin-top: 10px; float: left;">
+    <img src="images/1.jpg" alt="Dog" width="500" height="333">
+   
+    <div class="rescue">
+        <h2 style="text-align: center;">Adopt Me!<br></h2>
+        <p style="text-align: left; margin-left: 20px;">
+             Fostering a dog is an incredibly rewarding experience.
+             Fosters provide care, food, play, exercise, and socialization for an animal.
+             They work hand-in-hand with Dog Haven volunteers to respond to the adopter. 
+             And yes, it can be difficult to say goodbye, but the success makes it worthwhile. 
+             Our fosters share their stories and photos with other volunteers and celebrate each 
+             animal's new home together.
+        </p>
+     </div>
+    </div>
+     <div class="adopapplication">
+      <h2 style="text-align: center;"><a href="adopt_app.html">Adoption Application</a></h2>
+     </div>
+</body>
+</html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  </body>
-  </html>
