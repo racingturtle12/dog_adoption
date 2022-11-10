@@ -6,32 +6,8 @@
 <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-  <?php require 'shownav.php';?> 
+  <?php include 'shownav.php';?> 
     
-<!-- <div class="navbar">
-    <div>
-        <h1 class="logo">Dog haven<span style="color:#359127;"> Web</span> site</h1>
-        </div>
-  <a href="index.html">Home</a>
-  <div class="subnav">
-    <button class="subnavbtn">Adopt <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="adopt_app.html">Adopt a Dog</a>
-      <a href="adoptable_dogs.html">Adoptable Dogs</a>
-      <a href="adoption_agreements.html">Adoption Agreements</a>
-      <a href="adoption_fees.html">Adoption Fees</a>
-    </div>
-  </div> 
-
-  <div class="subnav">
-    <button class="subnavbtn">Foster <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="foster_app.html">Dog Foster Application</a>
-    </div>
-  </div>
-
-    <a href="loginform.html">Login</a>
-  </div> -->
 
   <form class="search" action="/action_page.php">
     <input type="text" placeholder="Search.." name="search">
@@ -54,7 +30,7 @@
      </div>
     </div>
      <div class="adopapplication">
-      <h2 style="text-align: center;"><a href="adopt_app.html">Adoption Application</a></h2>
+      <h2 style="text-align: center;"><a href="adopt_app.php">Adoption Application</a></h2>
      </div>
 </body>
 </html>
