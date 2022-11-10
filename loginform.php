@@ -18,8 +18,8 @@
 
   <form action="loginform.php" method="post">
 
-        <label> <strong> Email</strong></label>
-        <input type="text" name="email" />
+        <label> <strong> Username</strong></label>
+        <input type="text" name="userName" />
     
         <label><strong>Password </strong></label>
         <input type="text" name="password"/>
