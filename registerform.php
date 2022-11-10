@@ -22,7 +22,7 @@
              <input type="text" name="userName" />
        
              <td>Create Password </td>
-             <td><input type="text" name="pasword"/></td>
+             <td><input type="text" name="password"/></td>
          
              <td>Enter your Email </td>
              <input type="text" name="email"/>
