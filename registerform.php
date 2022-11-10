@@ -15,18 +15,16 @@
   <br>
   <br>
     <form action="registerform.php" method="post">
-    
+    <h2> Create an account: </h2>
+    <br>
            
-             <td>Enter User Name </td>
+             <td>Create Username </td>
              <input type="text" name="userName" />
        
              <td>Create Password </td>
              <td><input type="text" name="pasword"/></td>
-          
-             <td>Retype Password </td>
-             <input type="text" name="retypepasword"/>
          
-             <td>Enter Email </td>
+             <td>Enter your Email </td>
              <input type="text" name="email"/>
            
            <br>

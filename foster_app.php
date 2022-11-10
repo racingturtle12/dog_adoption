@@ -10,7 +10,10 @@
     
 <?php require 'shownav.php';
   echo shownav();?>
-
+  <form class="search" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
 
 
 <form>
@@ -27,15 +30,16 @@
             </p>
           </header>
           <form id="adoption-form">
-            <!-- Source of info -->
+      
+            <!-- First Name -->
             <div class="form-item">
-              <label id="label-one" for="source" class="label-item">How did you hear about "Dog Haven"?</label>
-              <input type="text" name="source" class="form-control">
+              <label for="fname" id="label-two" class="label-item">First name<span class="requred">*</span>:</label>
+              <input type="text" required name="fname" class="form-control" placeholder="Enter your first name">
             </div>
-            <!-- Name -->
-            <div class="form-item">
-              <label for="name" id="label-two" class="label-item">Full name<span class="requred">*</span>:</label>
-              <input type="text" required name="name" class="form-control" placeholder="Enter your full name">
+             <!-- Last Name -->
+             <div class="form-item">
+              <label for="lname" id="label-two" class="label-item">Last name<span class="requred">*</span>:</label>
+              <input type="text" required name="lname" class="form-control" placeholder="Enter your last name">
             </div>
             <!-- Email -->
             <div class="form-item">
@@ -54,42 +58,7 @@
               <input type="tel" name="phone" id="phone" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 placeholder="Format: 916-123-4578">
             </div>
-            <!-- Age -->
-            <div class="form-item">
-              <label for="age" id="laberl-six" class="label-item">Age:</label>
-              <input type="text" name="age" class="form-control" placeholder="Enter your age">
-            </div>
-            <!-- House type -->
-            <div class="form-item">
-              <label for="house" id="label-seven" class="label-item">Do you live in a:</label>
-              <select name="house" id="" class="form-control">
-                <option disabled selected value>Select type of the house:</option>
-                <option value="apartment">Apartment</option>
-                <option value="house">House</option>
-                <option value="room">Room</option>
-                <option value="studio">Studio</option>
-              </select>
-            </div>
-            <!-- Household type -->
-            <div class="form-item">
-              <p class="label-item">Select your household setting:</p>
-              <label class="radio-label"><input type="radio" name="household-type" class="input-radio"
-                  value="rural">Rural</label>
-              <label class="radio-label"><input type="radio" name="household-type" class="input-radio"
-                  value="suburban">Suburban</label>
-              <label class="radio-label"><input type="radio" name="household-type" class="input-radio"
-                  value="urban">Urban</label>
-            </div>
-            <!-- Home activity -->
-            <div class="form-item">
-              <p class="label-item">Select your home activity:</p>
-              <label class="radio-label"><input type="radio" name="home-activity" class="input-radio"
-                  value="busy/noisy">Busy/Noisy</label>
-              <label class="radio-label"><input type="radio" name="home-activity" class="input-radio"
-                  value="moderate comings/goings">Moderate comings/goings</label>
-              <label class="radio-label"><input type="radio" name="home-activity" class="input-radio"
-                  value="quiet with Occasional Guests">Quiet with occasional guests</label>
-            </div>
+          
             <!-- button -->
             <div id="submit-explain">
               <p><strong>By sending this electronically, I acknowledge that I have completely read this questionnaire and comprehend
