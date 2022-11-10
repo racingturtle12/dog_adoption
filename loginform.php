@@ -26,7 +26,7 @@
   
      <input type="submit" value="Submit" >
  
-    <h5>Don't have account with us: <a href="registerform.html">Sign Up</a></h5> 
+    <h5>Don't have account with us: <a href="registerform.php">Sign Up</a></h5> 
     </form>
   
 </body>
