@@ -13,7 +13,7 @@
 <body>
 <?php
 
-$sql = "SELECT * FROM users;";
+$sql = "SELECT * FROM users";
 
 $result = mysql_query($con, $sql);
 
