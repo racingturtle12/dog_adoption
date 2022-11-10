@@ -1,3 +1,7 @@
+<?php include_once 'connection.php'; ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +12,17 @@
 </head>
 <body>
 <?php
-     
-     $servername = 'localhost';
-     $username = 'icsfa2206';
-     $password = '5859';
-     $database_name = 'icsfa2206';
-     $db = mysqli_connect($servername, $username, $password,$database_name);
-     if(mysqli_connect_errno()){
-echo '<p> Error: Could not get into db. <br/>
-please try again</p>';
-exit;
-     }
 
-$querystring = "SELECT * FROM users;";
+$sql = "SELECT * FROM users;";
 
-$stmnt = mysql_query($db, $querystring);
+$result = mysql_query($con, $sql);
 
-if (mysqli_num_rows($result) > 0) {
-while($row = mysql_fetch_assoc($stmnt)) {
+$resultcheck = mysqli_num_rows($result);
+
+if ($resultcheck > 0) {
+while($row = mysql_fetch_assoc($result)) {
    echo "id ". $row['user_id']. "username ". $row['userName']. " passwrof" . $row['password']."email ". $row['user_email']. "<br>";
 }
-}else{
-   echo "0 results";
 }
 
 
