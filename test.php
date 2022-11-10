@@ -19,10 +19,13 @@ echo '<p> Error: Could not get into db. <br/>
 please try again</p>';
 exit;
      }
-$querystring = "SELECT * FROM users";
+
+$querystring = "SELECT * FROM users;";
+
 $stmnt = mysql_query($db, $querystring);
+
 if (mysqli_num_rows($result) > 0) {
-while($row = mysql_fetch_assoc($stmnt )) {
+while($row = mysql_fetch_assoc($stmnt)) {
    echo "id ". $row['user_id']. "username ". $row['userName']. " passwrof" . $row['password']."email ". $row['user_email']. "<br>";
 }
 }else{
@@ -40,7 +43,3 @@ while($row = mysql_fetch_assoc($stmnt )) {
 </body>
 </html>
 
-<!-- while($row = mysql_fetch_array($stmnt)) {
-   echo $row['column_name']; // Print a single column data
-   echo print_r($row);       // Print the entire row data
-} -->
