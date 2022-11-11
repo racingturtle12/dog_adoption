@@ -1,4 +1,4 @@
-<?php include 'connection.php'; ?>
+<!-- <?php include 'connection.php'; ?>
 
 <?php
      
@@ -17,6 +17,6 @@ while($row = $resultcheck -> fetch_assoc()) {
 
 
 
- ?>
+ ?> -->
 
 
