@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
-    echo "id: " . $row["user_id"]. " - Username: " . $row["userName"]. "Password " . $row["password"]. "<br>";
+    echo "id: " . $row["user_id"]. "<br> Username: " . $row["userName"]. "<br> Password:  " . $row["password"]. "<br>";
   }
 } else {
   echo "0 results";
