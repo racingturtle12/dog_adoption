@@ -1,18 +1,7 @@
-<?php include_once 'connection.php'; ?>
+<?php include 'connection.php'; ?>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Testing db </title>
-</head>
-<body>
 <?php
-
+     
 $sql = "SELECT * FROM users";
 
 $result = mysql_query($con, $sql);
@@ -28,11 +17,6 @@ while($row = mysql_fetch_assoc($result)) {
 
 
 
-  ?>
+ ?>
 
-
-
-
-</body>
-</html>
 
