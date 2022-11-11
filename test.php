@@ -4,7 +4,7 @@
      
 $sql = "SELECT * FROM users";
 
-$result = mysql_query($con, $sql);
+$result = $con->query($sql);
 
 $resultcheck = mysqli_num_rows($result);
 
