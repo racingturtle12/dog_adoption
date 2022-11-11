@@ -14,6 +14,44 @@
     <input type="text" placeholder="Search.." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
+  <?php
+$servername = "localhost";
+$username = "ics325fa2206";
+$password = "5859";
+$dbname = "ics325fa2206";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM dog";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    echo "id: " . $row["dog_id"]. "<br> Dog name: " . $row["dog_name"]. "<br> Dog Breed:  " . $row["dog_breed"]. "<br> MIcrochipped: " . $row["dog_microchipped"]. "<br> Weight: " . $row["dog_weight"]. "<br> Dog color:  " . $row["dog_color"]. "<br> 
+    Picture: " . $row["dog_img"]. "<br> Dog Shelter: " . $row["shelter_id"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+
+mysqli_close($conn);
+?>
+
+
+
+
+
+
+
+
+
+
 <container>Dog 1 </container>
 <br>
 <container>Dog 2 </container>
