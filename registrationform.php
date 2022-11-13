@@ -16,11 +16,14 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
-$query = "INSERT INTO 'users' (userName ,password, user_email) VALUES($user, $password,$email)";
-$result = mysqli_query($query,$conn);
-if($result){
-    $msg = "Registered Sussecfully";
+
+$sql = "INSERT INTO users (userName, password, user_email)
+VALUES ($user, $password, $email);
+if (mysqli_query($conn, $sql)) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
-else
-    $msg = "Error Registering";
+
+mysqli_close($conn);
 ?>

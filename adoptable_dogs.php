@@ -51,19 +51,5 @@ mysqli_close($conn);
 
 
 
-
-<container>Dog 1 </container>
-<br>
-<container>Dog 2 </container>
-<br>
-<container>Dog 3 </container>
-<br>
-<container>Dog 4</container>
-
-
-
-
-
-
   </body>
   </html>
