@@ -1,6 +1,6 @@
 <!-- same as the add  new dog page only difference is that edit will have and dog_id which will determine what dog neeeds to be edited  -->
 <?php 
- $id = $_POST['dog_id'];
+$id = $_POST['dog_id'];
 
 $servername = "localhost";
 
