@@ -142,3 +142,8 @@
   .rescue{
     background-color: orange;
   }
+  .navbar h1{
+    padding-right: 25px;
+    color: rgb(86, 28, 117);
+    margin-left: -55px;
+  }

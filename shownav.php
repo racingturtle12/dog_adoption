@@ -4,9 +4,7 @@
 function shownav() {
     echo '
     <div class="navbar">
-    <div>
-        <h1 class="logo">Dog haven<span style="color:#359127;"> Web</span> site</h1>
-    </div>
+      <h1> Dog Haven Website</h1>
       <a href="index.php">Home</a>
       <a href="adopt_app.php">Adopt a Dog Form </a>
       <a href="adoptable_dogs.php"> Dogs up for Adoption </a>
