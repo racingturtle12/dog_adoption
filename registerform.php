@@ -20,17 +20,17 @@
     <br>
            
              <td>Create Username </td>
-             <input type="text" name="userName" />
+             <input type="text" name="userName" required>
        
              <td>Create Password </td>
-             <td><input type="text" name="password"/></td>
+             <td><input type="text" name="password" required></td>
          
              <td>Enter your Email </td>
-             <input type="text" name="user_email"/>
+             <input type="email" name="user_email" required>
            
            <br>
             
-          <input type="submit" value="Submit" />
+          <button type="submit" name="submit">Submit</button>
       <br>
          
   </form>
