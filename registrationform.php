@@ -26,7 +26,7 @@ if($run){
     echo "form was succeesful";
     } else{
 
-echo "foprm was no good";
+echo "form was no good";
 
     }
 }
