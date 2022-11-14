@@ -18,7 +18,7 @@
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 
-<form  action="new_dog_action.php" method="post" >
+<form id="adoption-form" action="new_dog_action.php" method="post" >
 
 <label for="dog_name">Dog name:</label><br>
   <input type="text" id="dogname" name="dog_name" ><br>
