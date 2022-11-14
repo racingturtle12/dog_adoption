@@ -26,10 +26,13 @@
   </form>
   <br>
   <br>
-    <form action="registrationform.php" method="post">
+    <form action="registrationform.php" method="POST">
     <h2> Create an account: </h2>
     <br>
-           
+    <td>Create UserID </td>
+             <input type="number" name="user_id" required>
+
+
              <td>Create Username </td>
              <input type="text" name="userName" required>
        

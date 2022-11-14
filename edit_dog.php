@@ -39,7 +39,6 @@ $username = "ics325fa2202";
 $password = "6666";
 $dbname = "ics325fa2202";
 
-
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 $sqlSelect = "SELECT dog_id, dog_name FROM dog";
 $result = mysqli_query($conn, $sql);
@@ -56,7 +55,7 @@ while ($row = mysqli_fetch_array($result)) {
  echo "</select>";
 ?>
     
-<h1> Edit dog Post: </h1>
+<!-- <h1> Edit dog Post: </h1>
   <br>
 
 <label for="new_dog_name">Update Dog name:</label><br>
@@ -74,7 +73,7 @@ while ($row = mysqli_fetch_array($result)) {
 <input type="file" id="new_dog_img" name="new_dog_img" required>
   <br><br>
   <input type="submit">
-</form>
+</form> -->
 
     
 </body>
