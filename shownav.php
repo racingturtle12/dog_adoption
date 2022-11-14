@@ -12,7 +12,7 @@ function shownav() {
       <a href="adoptable_dogs.php"> Dogs up for Adoption </a>
       <a href="adoption_agreements.php">Adoption Agreements</a>
       <a href="adoption_fees.php">Adoption Fees</a>
-      <a href="add_dog.php">Add new dog </a>
+      <a href="new_dog.php">Add new dog </a>
       <a href="loginform.php">Login / Sign up</a>
     </div>
     ';
