@@ -35,9 +35,9 @@ $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
 if($run){
  
-echo "Your User info:  " . $user_id; 
+echo "Your User info"; 
 echo"<br>";
-echo "Your UserId:  " . $user;
+echo "Your UserId:  " . $user_id;
 echo"<br>";
 echo "Your UserName:  " . $username;
 echo"<br>";
