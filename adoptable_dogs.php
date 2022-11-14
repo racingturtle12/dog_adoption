@@ -16,9 +16,9 @@
   </form>
   <?php
 $servername = "localhost";
-$username = "ics325fa2206";
-$password = "5859";
-$dbname = "ics325fa2206";
+$username = "ics325fa2202";
+$password = "6666";
+$dbname = "ics325fa2202";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
