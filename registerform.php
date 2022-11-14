@@ -20,7 +20,7 @@
 <br>
 <br>
 <br>
-  <form class="search" action="action_page.php"  method="post">
+  <form class="search" action="action_page.php"  method="POST">
     <input type="text" placeholder="Search for dog breed" name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
