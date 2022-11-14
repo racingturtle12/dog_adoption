@@ -28,9 +28,9 @@
   <br>
     <form action="registrationform.php" method="POST">
     <h2> Create an account: </h2>
-    <br>
+     <br>
     <td>Create UserID </td>
-             <input type="number" name="user_id" required>
+             <input type="number" name="user_id" required> 
 
 
              <td>Create Username </td>
