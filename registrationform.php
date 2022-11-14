@@ -35,10 +35,13 @@ $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
 if($run){
  
-echo "Your User info " . $user_id; 
-echo "Your UserId " . $user;
-echo "Your UserName " . $username;
-echo "Email used " . $email;
+echo "Your User info:  " . $user_id; 
+echo"<br>";
+echo "Your UserId:  " . $user;
+echo"<br>";
+echo "Your UserName:  " . $username;
+echo"<br>";
+echo "Email used:  " . $email;
 
 
 } else{
