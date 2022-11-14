@@ -33,10 +33,12 @@
 <label> Only png files </label>
 <br>
 <input type="file" id="dog_img" name="dog_img">
-  <input type="submit">
   <br><br>
   <label for="shelter_id">Shelter :</label><br>
   <input type="text" id="shelter_id" name="shelter_id">
+  <br>
+  <br>
+  <input type="submit">
 </form>
 
 
