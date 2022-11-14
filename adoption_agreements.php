@@ -5,13 +5,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="menu.css">
 <link rel="stylesheet" href="form.css">
+<?php include 'shownav.php';
+  echo shownav();?> 
 </head>
 <body>
-<?php require 'shownav.php';
-  echo shownav();?>
-
-  <form class="search" action="action_page.php" method="post" >
-    <input type="text" placeholder="Search for dog breed." name="search">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <form class="search" action="action_page.php"  method="post">
+    <input type="text" placeholder="Search for dog breed" name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 <h2> Adoption Agreements </h2>
