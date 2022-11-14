@@ -29,7 +29,7 @@
   <label for="dog_weight">Dog Weight:</label><br>
   <input type="text" id="dog_weight" name="dog_weight">
   <label for="dog_color">Dog Color:</label><br>
-  <input type="text" id="dog_color" name="dog_color" value="John"><br>
+  <input type="text" id="dog_color" name="dog_color" ><br>
 <label> Only png files </label>
 <br>
 <input type="file" id="dog_img" name="dog_img">
