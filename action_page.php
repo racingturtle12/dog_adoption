@@ -14,7 +14,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM dog where dog_name like '%$search%'";
+$sql = "SELECT * FROM dog where dog_breed like '%$search%'";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {

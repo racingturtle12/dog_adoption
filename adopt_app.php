@@ -11,7 +11,7 @@
 <?php require 'shownav.php';
   echo shownav();?>
   <form class="search" action="action_page.php" method="post">
-    <input type="text" placeholder="Search for dog breed, color etc.." name="search">
+    <input type="text" placeholder="Search for dog breed" name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 
