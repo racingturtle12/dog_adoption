@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
         $user = $_POST['userName'];
         $password = $_POST['password'];
         $email = $_POST['user_email'];
-        $sql = "insert into users (userName, password, user_email) values ('$user', '$password', '$email')";
+        $sql = "INSERT INTO users VALUES ('$user', '$password', '$email')";
 $run = mysqli_query($conn, $sql) or die (mysqli _error()); 
 
 if($run){
