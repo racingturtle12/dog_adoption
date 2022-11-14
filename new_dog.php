@@ -24,7 +24,7 @@
   <input type="text" id="dogname" name="dog_name" ><br>
   <label for="dog_breed">Dog Breed:</label><br>
   <input type="text" id="dog_breed" name="dog_breed" >
-  <label for="dog_microchipped">Microchipped ? :</label><br>
+  <label for="dog_microchipped">Microchipped? (yes or no) :</label><br>
   <input type="text" id="dog_microchipped" name="dog_microchipped" ><br>
   <label for="dog_weight">Dog Weight:</label><br>
   <input type="text" id="dog_weight" name="dog_weight">
