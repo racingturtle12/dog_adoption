@@ -76,7 +76,7 @@ else{
   <br>
   <br>
 
-  <form action="" method="post">
+  <form action="#" method="post">
   <h2><strong> Login </strong></h2>
   <br>
   <br>
