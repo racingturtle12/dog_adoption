@@ -1,7 +1,7 @@
 <?php
 
 
-function shownav() {
+function show_user_nav() {
     echo '
     <div class="navbar">
       <h1> Dog Haven Website</h1>
@@ -10,7 +10,7 @@ function shownav() {
       <a href="adoptable_dogs.php"> Dogs up for Adoption </a>
       <a href="adoption_agreements.php">Adoption Agreements</a>
       <a href="adoption_fees.php">Adoption Fees</a>
-      <a href="loginform.php">Login / Sign up</a>
+      <a href="#">Logout</a>
     </div>
     ';
 
@@ -19,4 +19,3 @@ function shownav() {
 
 
 ?>
-

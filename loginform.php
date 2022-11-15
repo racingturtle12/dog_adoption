@@ -1,18 +1,63 @@
 <?php 
 
+$servername = "localhost";
+
+$username = "ics325fa2206";
+
+$password = "5859";
+
+$dbname = "ics325fa2206";
+
+// Create connection
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+
+if (!$conn) {
+
+die("Connection failed: " . mysqli_connect_error());
+
+}
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+$user = $_POST['username'];
+
+$password = $_POST['password'];
 
 
+$sql = "select * from users where username='" .$user."' and password='" .$password."'";
+
+$run = mysqli_query($conn, $sql);
+
+$row = mysqli_fetch_array($run);
+
+if($row["user_type"]=="user"){
+  header("Location: user_home.php");
+}
+
+elseif($row["user_type"]=="admin"){
+  header("Location: admin_home.php");
+  }
+
+else{
+
+  echo " Username or password is incorrect";
+}
 
 
+}
 
 ?>
+
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="menu.css">
-  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="main.css">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +71,10 @@
   <br>
   <br>
 
-  <form action="loginform.php" method="post">
+  <form action="" method="post">
 
         <label> <strong> Username</strong></label>
-        <input type="text" name="userName" />
+        <input type="text" name="username" />
     
         <label><strong>Password </strong></label>
         <input type="text" name="password"/>

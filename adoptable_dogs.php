@@ -3,8 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="menu.css">
-<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="main.css">
 <?php include 'shownav.php';
   echo shownav();?> 
 </head>
@@ -24,9 +23,9 @@
   <br>
   <?php
 $servername = "localhost";
-$username = "ics325fa2202";
-$password = "6666";
-$dbname = "ics325fa2202";
+$username = "ics325fa2206";
+$password = "5859";
+$dbname = "ics325fa2206";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -41,8 +40,8 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
-    echo  "<br> Dog name: " . $row["dog_name"]. "<br> Dog Breed:  " . $row["dog_breed"]. "<br> Microchipped: " . $row["dog_microchipped"]. "<br> Weight: " . $row["dog_weight"]. "<br> Dog color:  " . $row["dog_color"]. "<br> " 
-    . '<img src="data:image/png;base64,' .base64_encode( $row["dog_img"]).'"/>';
+    echo  "<br> Dog name: " . $row["dog_name"]. "<br> Dog Breed:  " . $row["dog_breed"]. "<br> Weight: " . $row["dog_weight"]. "<br> Dog color:  " . $row["dog_color"]. "<br> " 
+    . "<br> Gender:  " . $row["dog_gender"]. ' <br><br><img src="data:image/jpg;base64,' .base64_encode( $row["dog_img"]).'"/> <br><br>';
   }
 } else {
   echo "0 results";

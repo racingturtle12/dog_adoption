@@ -3,11 +3,11 @@
 
 $servername = "localhost";
 
-$username = "ics325fa2202";
+$username = "ics325fa2206";
 
-$password = "6666";
+$password = "5859";
 
-$dbname = "ics325fa2202";
+$dbname = "ics325fa2206";
 
 // Create connection
 
@@ -22,14 +22,13 @@ die("Connection failed: " . mysqli_connect_error());
 }
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
- $user_id =  $_POST['user_id']; 
-$user = $_POST['userName'];
+
+$user = $_POST['username'];
 
 $password = $_POST['password'];
 
-$email = $_POST['user_email'];
 
-$sql = "INSERT INTO users ( user_id,  userName, password, user_email) VALUES ( '$user_id', '$user', '$password', '$email')";
+$sql = "INSERT INTO users ( username, password) VALUES ('$user', '$password')";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
@@ -37,11 +36,9 @@ if($run){
  
 echo "Your User info"; 
 echo"<br>";
-echo "Your UserId:  " . $user_id;
+echo "Your Username is :  " . $user;
 echo"<br>";
-echo "Your UserName:  " . $username;
-echo"<br>";
-echo "Email used:  " . $email;
+
 
 
 } else{
