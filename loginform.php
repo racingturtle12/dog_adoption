@@ -11,6 +11,10 @@ $dbname = "ics325fa2206";
 
 
 session_start():
+
+
+
+
 // Create connection
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -38,12 +42,12 @@ $row = mysqli_fetch_array($run);
 
 if($row["user_type"]=="user"){
   $_SESSION["username"]== $user;
-  header("Location: user_home.php");
+  header("location: user_home.php");
 }
 
 elseif($row["user_type"]=="admin"){
   $_SESSION["username"]== $user;
-  header("Location: admin_home.php");
+  header("location: admin_home.php");
   }
 
 else{
@@ -55,8 +59,6 @@ else{
 }
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +78,7 @@ else{
   <br>
   <br>
 
-  <form action="#" method="post">
+  <form action="#" method="POST">
   <h2><strong> Login </strong></h2>
   <br>
   <br>
