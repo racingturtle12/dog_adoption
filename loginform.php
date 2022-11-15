@@ -72,6 +72,9 @@ else{
   <br>
 
   <form action="" method="post">
+  <h2><strong> Login </strong></h2>
+  <br>
+  <br>
 
         <label> <strong> Username</strong></label>
         <input type="text" name="username" />
