@@ -10,7 +10,7 @@ function show_user_nav() {
       <a href="adoptable_dogs.php"> Dogs up for Adoption </a>
       <a href="adoption_agreements.php">Adoption Agreements</a>
       <a href="adoption_fees.php">Adoption Fees</a>
-      <a href="#">Logout</a>
+      <a href="logout.php">Logout</a>
     </div>
     ';
 

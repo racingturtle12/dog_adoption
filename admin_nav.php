@@ -9,7 +9,7 @@ function show_admin_nav() {
       <a href="#">Edit User</a>
       <a href="edit_dog_post.php">Edit Dog Post</a>
       <a href="new_dog.php">Add Dog Post </a>
-      <a href="#">Logout</a>
+      <a href="logout.php">Logout</a>
     </div>
     ';
 

@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +14,7 @@
   echo show_admin_nav();?> 
 </head>
 <body>
+<?php echo $_SESSION["username"] ?>
 <br>
 <br>
 <br>
