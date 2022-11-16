@@ -9,7 +9,7 @@ $password = "5859";
 $dbname = "ics325fa2206";
 
 
-
+session_start():
 
 
 
