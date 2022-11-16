@@ -38,12 +38,12 @@ $row = mysqli_fetch_array($run);
 
 if($row["user_type"]=="user"){
   $_SESSION["username"]== $user;
-  header("Location:user_home.php");
+  header("location:user_home.php");
 }
 
 elseif($row["user_type"]=="admin"){
   $_SESSION["username"]== $user;
-  header("Location:admin_home.php");
+  header("location:admin_home.php");
   }
 
 else{
