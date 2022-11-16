@@ -24,7 +24,7 @@ if(!isset($_SESSION["username"]))
   echo show_user_nav();?> 
 </head>
 <body>
-    <?php echo $_SESSION["username"] ?>
+ <h1>   <?php echo $_SESSION["username"] ?></h1>
 <br>
 <br>
 <br>

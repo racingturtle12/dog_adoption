@@ -37,13 +37,17 @@ $run = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($run);
 
 if($row["user_type"]=="user"){
+
   $_SESSION["username"]== $user;
   header("location:user_home.php");
+
 }
 
 elseif($row["user_type"]=="admin"){
+
   $_SESSION["username"]== $user;
   header("location:admin_home.php");
+  
   }
 
 else{
