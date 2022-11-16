@@ -3,7 +3,7 @@ session_start();
 
 session_destroy();
 
-header("location:loginform.php");
+header("Location:loginform.php");
 
 exit;
 ?>
