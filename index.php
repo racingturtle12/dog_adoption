@@ -21,7 +21,7 @@
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 
-  <div style=" margin-top: 10px; float: left;">
+  <div style=" margin-top: 10px; float: left;" class="dog-info">
     <img src="images/1.jpg" alt="Dog" width="500" height="333">
    
     <div class="rescue">
@@ -36,9 +36,6 @@
         </p>
      </div>
     </div>
-     <div class="adopapplication">
-      <h2 style="text-align: center;"><a href="adopt_app.php">Adoption Application</a></h2>
-     </div>
 </body>
 </html>
 

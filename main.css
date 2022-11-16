@@ -1,69 +1,54 @@
 
-.body {
+body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    display: flex;
-    background-color: #ffa500;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    background-color: #060611;
+    color: antiquewhite;
+}
+ 
+.navbar {
+  overflow: hidden;
+  background-color: #221f1f;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+}
 
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 70px;
-    z-index: 2;
-    padding: 30px;
-    background-color: rgb(121, 83, 14);
-    margin:auto;
+.navbar h1{
+  padding-left: 25px;
+  color: antiquewhite;
+  font-size: 60px;
 
-  }
+
+} 
   
-  .navbar a {
-    font-weight: bold;
-    float: left;
-    font-size: 16px;
-    color: rgb(14, 1, 1);
+ .navbar a {
+    display: inline-block;
+    color: #8c7acc;
     text-align: center;
+    padding: 15px 25px;
     text-decoration: none;
-    padding: 30px;
-  }
+    font-size: 21px;
 
-  
-  .navbar a:hover{
-    background-color: rgb(103, 73, 73);
-  }
-  
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: rgb(75, 75, 174);
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  .subnav:hover .subnav-content {
-    display: block;
-  }
-  .logo{
-    float: left;
-    color: pink;
-  }
+}
+
+.navbar a:hover {
+    color:white;
+    background-color: #8c7acc;
+    border-radius: 3px;
+}
+.navbar a:active{
+
+color: lightblue;
+background-color: gray;
+
+}
+
 
   form.search input[type=text] {
    padding-left: 90px;
@@ -103,6 +88,13 @@
     display: flex;
  
   }
+  .dog-info{
+    display:inline-block;
+    text-align: center;
+    padding-left: 180px;
+    padding-top: 25px;
+
+  }
 
   .rescue{
     float: right;
@@ -112,25 +104,22 @@
     
   }
   .adopapplication{
-    font-family: 'Courier New', Courier, monospace;
     width: 220px;
     height: 100px;
     float: right;
-    background-color: orange;
     color: white;
-    
-  
     margin-top: 90px;
 
   }
+  img{
+    border-radius: 10px;
+  }
   .rescue{
-    background-color: orange;
+    background-color: #221f1f;
+    border-radius: 10px;
+
   }
-  .navbar h1{
-    padding-right: 25px;
-    color: rgb(86, 28, 117);
-    margin-left: -55px;
-  }
+
   * {
     margin: 0;
     padding: 0;
@@ -187,7 +176,7 @@
   }
   
   form {
-    background: #ffa500;
+    background: #383333;
     padding: 2.5rem 0.625rem;
     border-radius: 0.5rem;
   }
