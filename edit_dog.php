@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee edit dog post </title>
-    <?php include 'shownav.php';
-  echo shownav();?> 
+    <?php include 'admin_nav.php';
+  echo show_admin_nav();?> 
 </head>
 <body>
 <br>
