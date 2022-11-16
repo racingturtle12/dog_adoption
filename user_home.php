@@ -5,9 +5,14 @@ if(!isset($_SESSION["username"]))
 {
 
   header("location:loginform.php");
-
-
 }
+
+elseif($_SESSION['usertype']=='admin'){
+  
+  header("location:loginform.php");
+}
+
+
 
 ?>
 
