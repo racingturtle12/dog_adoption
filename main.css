@@ -50,6 +50,8 @@ background-color: #faf4fc;
 }
 .search{
   background-color: #47294c;
+  border-radius: 40px;
+  margin-top: -115px;
 }
 
   form.search input[type=text] {
@@ -99,13 +101,6 @@ background-color: #faf4fc;
 
   }
 
-  .rescue{
-    float: right;
-    width: 400px;
-    height: 333px;
-    background-color: aliceblue;
-    
-  }
   .adopapplication{
     width: 220px;
     height: 100px;
@@ -118,10 +113,12 @@ background-color: #faf4fc;
     border-radius: 10px;
   }
   .rescue{
+    width: 400px;
+    height: 333px;
+    float: right;
     color: #faf4fc;
     background-color: #816f7d;
     border-radius: 10px;
-
   }
 
   * {
