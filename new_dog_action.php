@@ -54,7 +54,7 @@ echo"<br>";
 echo "Dog Gender:  " . $dog_gender;
 echo"<br>";
 echo"<br>";
-echo "Picture of Dog:  " . '<img src="data:image/jpg;base64,' .base64_encode( $row["dog_img"]).'"/>;
+echo "Picture of Dog:  " . '<img src="data:image/jpg;base64,' .base64_encode($dog_img)./>;
 echo"<br>";
 
 
