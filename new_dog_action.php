@@ -31,7 +31,7 @@ $dog_gender = $_POST['dog_gender'];
 $dog_img = $_POST['dog_img'];
 
                         // ()Insert names of coloumn in dog table between parenthesis 
-$sql = "INSERT INTO dog ( username, password) VALUES ('$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img')";
+$sql = "INSERT INTO dog ( dog_name, dog_breed, dog_weight, dog_color, dog_gender, dog_img) VALUES ('$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img')";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
@@ -54,7 +54,7 @@ echo"<br>";
 echo "Dog Gender:  " . $dog_gender;
 echo"<br>";
 echo"<br>";
-echo "Picture of Dog:  " . $dog_img;
+echo "Picture of Dog:  " . '<img src="data:image/jpg;base64,' .base64_encode( $row["dog_img"]).'"/>;
 echo"<br>";
 
 
