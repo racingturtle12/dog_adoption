@@ -18,14 +18,14 @@
 <br>
 
 <br>
-  <form class="search" action="action_page.php"  method="post">
+  <form class="search" action="action_page.php"  method="POST">
     <input type="text" placeholder="Search for dog breed" name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
   <br>
   <h1> Add new dog: </h1>
   <br>
-<form id="adoption-form" action="new_dog_action.php" method="post" >
+<form id="adoption-form" action="new_dog_action.php" method="POST" >
 
 <label for="dog_name">Dog name:</label><br>
   <input type="text" id="dogname" name="dog_name" ><br>
