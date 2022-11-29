@@ -27,13 +27,11 @@ $dog_breed = $_POST['dog_breed'];
 $dog_weight = $_POST['dog_weight'];
 $dog_color= $_POST['dog_color'];
 $dog_gender = $_POST['dog_gender'];
-$filename = $_FILES["dog_img"]["name"];
-$tempname = $_FILES["dog_img"]["tmp_name"];
-$folder = "image/" . $filename;
+$filename = $_POST['dog_img'];
 $id = $_POST['shelter_id'];
                    
-$sql = "INSERT INTO dog (dog_name, dog_breed, dog_weight, dog_color, dog_gender, dog_img, shelter_id) VALUES 
-('','$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$filename','$id')";
+$sql = "INSERT INTO dog (dog_id,dog_name,dog_breed,dog_weight,dog_color,dog_gender,dog_img, shelter_id) VALUES 
+(NULL,'$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$filename','$id')";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
