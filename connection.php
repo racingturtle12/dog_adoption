@@ -12,19 +12,24 @@
     <?php include 'admin_nav.php';
   echo show_admin_nav();?> 
 </head>
+<br>
+<br>
 <body>
 <br>
 <br>
 <br>
 <br>
+<br>
+<br>
 
-  <form class="search" action="edit_user.php"  method="POST">
+  <form class="search" action="action_page.php"  method="POST">
+    <input type="text" placeholder="Search for dog breed" name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <br>
+<br>
+  <form id="adoption-form" action="edit_user.php"  method="POST">
     <br>
-  <h1>Please select usertype:</h1>
-  <input type="radio" id="age1" name="user_type" value="admin">
-  <label for="age1">Admin</label><br>
-  <input type="radio" id="age2" name="user_type" value="user">
-  <label for="age2">User</label><br>  
 <?php
 
 $link = mysqli_connect("localhost","ics325fa2206","5859","ics325fa2206");
@@ -33,7 +38,7 @@ $sql = "SELECT * FROM users;";
 
 $result = mysqli_query($link,$sql);
 if ($result != 0) {
-    echo '<label>Select users name:';
+    echo '<label>Select Name you wish to edit:';
     echo '<select name="user_id">';
     echo '<option value="">all</option>';
 
@@ -52,6 +57,19 @@ if ($result != 0) {
 mysqli_close($link);
 
 ?>
+  <h3>Please select authorization:</h3>
+  <label for="age1">Admin</label>
+  <input type="radio" id="age1" name="user_type" value="admin">
+ <br>
+ <label for="age2">User</label>
+  <input type="radio" id="age2" name="user_type" value="user">
+<br>  
+
+
+
+
+
+
   <input type="submit">
 </form>
 
