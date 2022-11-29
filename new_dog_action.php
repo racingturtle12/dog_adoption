@@ -31,7 +31,7 @@ $dog_img = $_POST['dog_img'];
 $id = $_POST['shelter_id'];
                    
 $sql = "INSERT INTO dog (dog_name, dog_breed, dog_weight, dog_color, dog_gender, dog_img, shelter_id) VALUES 
-(NULL,'$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img','$id')";
+('','$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img','$id')";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
