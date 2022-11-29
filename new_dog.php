@@ -41,6 +41,34 @@
 <br>
 <input type="file" id="dog_img" name="dog_img">
   <br><br>
+
+  <?php
+
+$link = mysqli_connect("localhost","ics325fa2206","5859","ics325fa2206");
+
+$sql = "SELECT shelter_name FROM shelter GROUP BY shelter_id;";
+
+$result = mysqli_query($link,$sql);
+if ($result != 0) {
+    echo '<label>Shelter:';
+    echo '<select name="shelter_id">';
+    echo '<option value="">all</option>';
+
+    $num_results = mysqli_num_rows($result);
+    for ($i=0;$i<$num_results;$i++) {
+        $row = mysqli_fetch_array($result);
+        $id = $row ['shelter_id'];
+        $name = $row['shelter_name'];
+        echo '<option value="' .$id. '">' .$name. '</option>';
+    }
+
+    echo '</select>';
+    echo '</label>';
+}
+
+mysqli_close($link);
+
+?>
   <input type="submit">
 </form>
 

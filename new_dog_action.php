@@ -23,15 +23,15 @@ die("Connection failed: " . mysqli_connect_error());
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 $dog_name = $_POST['dog_name'];
-
 $dog_breed = $_POST['dog_breed'];
 $dog_weight = $_POST['dog_weight'];
 $dog_color= $_POST['dog_color'];
 $dog_gender = $_POST['dog_gender'];
 $dog_img = $_POST['dog_img'];
-
-                        // ()Insert names of coloumn in dog table between parenthesis 
-$sql = "INSERT INTO dog (dog_name, dog_breed, dog_weight, dog_color, dog_gender, dog_img) VALUES ('$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img')";
+$id = $_POST['shelter_id'];
+                   
+$sql = "INSERT INTO dog (dog_name, dog_breed, dog_weight, dog_color, dog_gender, dog_img, shelter_id) VALUES 
+(NULL,'$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img','$id')";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
