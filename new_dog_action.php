@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $servername = "localhost";
 
 $username = "ics325fa2206";
@@ -27,11 +27,13 @@ $dog_breed = $_POST['dog_breed'];
 $dog_weight = $_POST['dog_weight'];
 $dog_color= $_POST['dog_color'];
 $dog_gender = $_POST['dog_gender'];
-$dog_img = $_POST['dog_img'];
+$filename = $_FILES["dog_img"]["name"];
+$tempname = $_FILES["dog_img"]["tmp_name"];
+$folder = "image/" . $filename;
 $id = $_POST['shelter_id'];
                    
 $sql = "INSERT INTO dog (dog_name, dog_breed, dog_weight, dog_color, dog_gender, dog_img, shelter_id) VALUES 
-('','$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$dog_img','$id')";
+('','$dog_name', '$dog_breed', '$dog_weight', '$dog_color', '$dog_gender', '$filename','$id')";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
