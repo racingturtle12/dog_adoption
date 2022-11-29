@@ -19,10 +19,11 @@
 <br>
 
   <form class="search" action="edit_user.php"  method="POST">
+    <br>
   <h1>Please select usertype:</h1>
-  <input type="radio" id="age1" name="age" value="admin">
+  <input type="radio" id="age1" name="user_type" value="admin">
   <label for="age1">Admin</label><br>
-  <input type="radio" id="age2" name="age" value="user">
+  <input type="radio" id="age2" name="user_type" value="user">
   <label for="age2">User</label><br>  
 <?php
 
@@ -53,5 +54,6 @@ mysqli_close($link);
 ?>
   <input type="submit">
 </form>
+
 </body>
 </html>
