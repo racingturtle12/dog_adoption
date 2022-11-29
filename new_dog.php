@@ -73,15 +73,5 @@ mysqli_close($link);
   <input type="submit">
 </form>
 
-
-
-
-
-
-
-
-  
-
-    
 </body>
 </html>
