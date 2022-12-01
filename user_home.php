@@ -29,7 +29,7 @@ elseif($_SESSION['usertype']=='admin'){
   echo show_user_nav();?> 
 </head>
 <body>
- <h1>   <?php echo "Hello, ".  $_SESSION["username"] ;?></h1>
+<h1><?php echo "Hello, ".  $_SESSION["username"] ;?></h1>
 <br>
 <br>
 <br>

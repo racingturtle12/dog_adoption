@@ -54,8 +54,6 @@ elseif($_SESSION['usertype']=='user'){
         </p>
      </div>
     </div>
-     <div class="adopapplication">
-      <h2 style="text-align: center;"><a href="adopt_app.php">Adoption Application</a></h2>
-     </div>
+
 </body>
 </html>
