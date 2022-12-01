@@ -25,7 +25,7 @@ elseif($_SESSION['usertype']=='user'){
   echo show_admin_nav();?> 
 </head>
 <body>
-<h1><?php echo $_SESSION["username"] ?></h1>
+<h1><?php echo "Hello, ".  $_SESSION["username"] ;?></h1>
 <br>
 <br>
 <br>

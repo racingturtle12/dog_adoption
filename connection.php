@@ -42,7 +42,7 @@ elseif($_SESSION['usertype']=='user'){
   </form>
   <br>
 <br>
-  <form id="adoption-form" action="edit_user.php"  method="POST">
+  <form id="adoption-form" action="edit_user_action.php"  method="POST">
     <br>
 <?php
 
@@ -80,8 +80,14 @@ mysqli_close($link);
   <input type="radio" id="age2" name="user_type" value="user">User
   </label>
   <br>  
-
-
+  
+  <label> <strong> Change Username?</strong></label>
+        <input type="text" name="username" />
+  <br>
+  <br>
+  
+        <label> <strong> Change Password?</strong></label>
+        <input type="text" name="password" />
 
 
 
