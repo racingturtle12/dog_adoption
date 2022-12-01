@@ -1,4 +1,18 @@
-<?php session_start();?>
+<?php
+session_start();
+
+if(!isset($_SESSION["username"]))
+{
+
+  header("location:loginform.php");
+
+}
+elseif($_SESSION['usertype']=='user'){
+  
+  header("location:loginform.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,7 +76,7 @@ mysqli_close($link);
   <input type="radio" id="age1" name="user_type" value="admin"> Admin
   </label>
   <br>
- <label for="age2" class="radio-inline>
+ <label for="age2" class="radio-inline">
   <input type="radio" id="age2" name="user_type" value="user">User
   </label>
   <br>  
