@@ -58,12 +58,14 @@ mysqli_close($link);
 
 ?>
   <h3>Please select authorization:</h3>
-  <label for="age1">Admin</label>
-  <input type="radio" id="age1" name="user_type" value="admin">
- <br>
- <label for="age2">User</label>
-  <input type="radio" id="age2" name="user_type" value="user">
-<br>  
+  <label for="age1" class="radio-inline">
+  <input type="radio" id="age1" name="user_type" value="admin"> Admin
+  </label>
+  <br>
+ <label for="age2" class="radio-inline>
+  <input type="radio" id="age2" name="user_type" value="user">User
+  </label>
+  <br>  
 
 
 
