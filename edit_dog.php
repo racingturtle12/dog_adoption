@@ -13,7 +13,6 @@ elseif($_SESSION['usertype']=='user'){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,49 +45,56 @@ elseif($_SESSION['usertype']=='user'){
 
 <form id="adoption-form" action="edit_dog_action.php" method="post" >
     <br>
-    Select dog you wish to edit: </label>
+    <h1> Edit dog Post: </h1>
     <br>
-     <?php
-$servername = "localhost";
-$username = "ics325fa2202";
-$password = "6666";
-$dbname = "ics325fa2202";
+<?php
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$sqlSelect = "SELECT dog_id, dog_name FROM dog";
-$result = mysqli_query($conn, $sql);
+$link = mysqli_connect("localhost","ics325fa2206","5859","ics325fa2206");
 
-echo "<select id='dog_id' name='dog_name'>";
+$sql = "SELECT * FROM dog;";
 
-while ($row = mysqli_fetch_array($result)) {
-   unset($id, $name);
-   $id = $row['dog_id'];
-   $name = $row['dog_name']; 
-   echo '<option value="'.$id.'">'.$name.'</option>';
- }
- 
- echo "</select>";
+$result = mysqli_query($link,$sql);
+if ($result != 0) {
+    echo '<label>Select Dog you wish to edit:';
+    echo '<select name="dog_id">';
+    echo '<option value="">all</option>';
+
+    $num_results = mysqli_num_rows($result);
+    for ($i=0;$i<$num_results;$i++) {
+        $row = mysqli_fetch_array($result);
+        $id = $row ['dog_id'];
+        $name = $row ['dog_name'];
+        $dog_breed =$row ['dog_breed'];
+        echo '<option value="' .$id. '">' .$name." --Breed: ". $dog_breed. '</option>';
+    }
+
+    echo '</select>';
+    echo '</label>';
+}
+
+mysqli_close($link);
+
 ?>
     
-<!-- <h1> Edit dog Post: </h1>
+
   <br>
 
-<label for="new_dog_name">Update Dog name:</label><br>
+ <label for="new_dog_name">Update Dog name:</label><br>
   <input type="text" id="new_dog_name" name="new_dog_name"required ><br>
   <label for="new_dog_breed"> Update Dog Breed:</label><br>
   <input type="text" id="new_dog_breed" name="new_dog_breed" required>
-  <label for="new_dog_microchipped"> Update Microchipped? (yes or no) :</label><br>
-  <input type="text" id="new_dog_microchipped" name="new_dog_microchipped"required ><br>
+  <label for="new_dog_gender"> Update Gender:</label><br>
+  <input type="text" id="new_dog_gender" name="new_dog_gender"required ><br>
   <label for="new_dog_weight"> Update Dog Weight:</label><br>
   <input type="text" id="new_dog_weight" name="new_dog_weight"required>
   <label for="new_dog_color">Update Dog Color:</label><br>
   <input type="text" id="dog_color" name="new_dog_color"required ><br>
-<label> Only png files </label>
+<label> Only jpg files </label>
 <br>
 <input type="file" id="new_dog_img" name="new_dog_img" required>
   <br><br>
-  <input type="submit">
-</form> -->
+  <input type="submit"> 
+</form> 
 
     
 </body>
