@@ -14,10 +14,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM dog where dog_breed like '%$search%' OR 
-where dog_gender like '%$search%' OR 
-where dog_name like '%$search%' OR 
-where dog_color like '%$search%'";
+$sql = "SELECT * FROM dog where dog_breed like '%$search%'";
 
 $result = mysqli_query($conn, $sql);
 
