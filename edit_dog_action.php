@@ -25,7 +25,7 @@ die("Connection failed: " . mysqli_connect_error());
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 if (!empty($_POST['new_dog_name']) && !empty($_POST['new_dog_breed']) && !empty($_POST['new_dog_microchipped'])  && !empty($_POST['new_dog_weight'])  && !empty($_POST['new_dog_color'])  && !empty($_POST['new_dog_img'])){
-
+$dog_id= $_POST['dog_id'];
 $dog_name = $_POST['new_dog_name'];
 
 $dog_breed = $_POST['new_dog_breed'];
