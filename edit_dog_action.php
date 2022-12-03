@@ -1,14 +1,12 @@
-<!-- same as the add  new dog page only difference is that edit will have and dog_id which will determine what dog neeeds to be edited  -->
-<?php 
-$id = $_POST['dog_id'];
-
+<?php
+session_start();
 $servername = "localhost";
 
-$username = "ics325fa2202";
+$username = "ics325fa2206";
 
-$password = "6666";
+$password = "5859";
 
-$dbname = "ics325fa2202";
+$dbname = "ics325fa2206";
 
 // Create connection
 
@@ -29,14 +27,17 @@ $dog_name = $_POST['new_dog_name'];
 
 $dog_breed = $_POST['new_dog_breed'];
 
-$dog_micro = $_POST['new_dog_microchipped'];
+$dog_gender = $_POST['new_dog_gender'];
 
 $dog_weight = $_POST['new_dog_weight'];
 
 $dog_color = $_POST['new_dog_color'];
 $dog_img = $_POST['new_dog_img'];
+$shelter_id  $_POST['new_shelter_id'];
 
-$sql = "UPDATE dog SET dog_name='$dog_name', dog_breed='$dog_breed', dog_microchipped='$dog_micro', dog_weight='$dog_weight', dog_color='$dog_color' , dog_img='$dog_img' WHERE dog_id =$id";
+$sql = "UPDATE dog SET dog_name= '$dog_name, dog_breed='$dog_breed',
+ dog_gender='$dog_gender', dog_weight='$dog_weight', dog_color='$dog_color' , 
+ dog_img='$dog_img' WHERE dog_id ='$id'";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 }

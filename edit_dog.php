@@ -62,10 +62,10 @@ if ($result != 0) {
     $num_results = mysqli_num_rows($result);
     for ($i=0;$i<$num_results;$i++) {
         $row = mysqli_fetch_array($result);
-        $id = $row ['dog_id'];
-        $name = $row ['dog_name'];
+        $dog_id = $row ['dog_id'];
+        $dog_name = $row ['dog_name'];
         $dog_breed =$row ['dog_breed'];
-        echo '<option value="' .$id. '">' .$name." --Breed: ". $dog_breed. '</option>';
+        echo '<option value="' .$dog_id. '">' .$dog_name." --Breed: ". $dog_breed. '</option>';
     }
 
     echo '</select>';
@@ -93,6 +93,35 @@ mysqli_close($link);
 <br>
 <input type="file" id="new_dog_img" name="new_dog_img" required>
   <br><br>
+
+  <?php
+
+$link1 = mysqli_connect("localhost","ics325fa2206","5859","ics325fa2206");
+
+$sql1 = "SELECT * FROM shelter;";
+
+$result1 = mysqli_query($link1,$sql1);
+if ($result != 0) {
+    echo '<label>Select shelter you wish to update:';
+    echo '<select name="shelter_id">';
+    echo '<option value="">all</option>';
+
+    $num_results1 = mysqli_num_rows($result1);
+    for ($i=0;$i<$num_results1;$i++) {
+        $row = mysqli_fetch_array($result1);
+        $shelter_id = $row ['shelter_id'];
+        $shelter_name = $row ['shelter_name'];
+        echo '<option value="' .$shelter_id. '">' .$shelter_name. '</option>';
+    }
+
+    echo '</select>';
+    echo '</label>';
+}
+
+mysqli_close($link1);
+
+?>
+
   <input type="submit"> 
 </form> 
 

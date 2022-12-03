@@ -26,7 +26,8 @@ $user_type = $_POST['user_type'];
 $username = $_POST['username'];
 $password = $_POST['password'];
                    
-$sql = "UPDATE users SET user_type = '$user_type', username= '$username',password='$password' WHERE user_id = '$user_id'";
+$sql = "UPDATE users SET user_type = '$user_type', username= '$username',
+password='$password' WHERE user_id = '$user_id'";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 
