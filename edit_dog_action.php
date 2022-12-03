@@ -33,11 +33,11 @@ $dog_weight = $_POST['new_dog_weight'];
 
 $dog_color = $_POST['new_dog_color'];
 $dog_img = $_POST['new_dog_img'];
-$shelter_id  $_POST['new_shelter_id'];
+$shelter_id  $_POST['shelter_id'];
 
 $sql = "UPDATE dog SET dog_name= '$dog_name, dog_breed='$dog_breed',
  dog_gender='$dog_gender', dog_weight='$dog_weight', dog_color='$dog_color' , 
- dog_img='$dog_img' WHERE dog_id ='$id'";
+ dog_img='$dog_img', $shelter_id='shelter_id' WHERE dog_id ='$dog_id'";
 
 $run = mysqli_query($conn, $sql) or die (mysqli_error());
 }
