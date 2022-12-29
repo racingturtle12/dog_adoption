@@ -33,3 +33,8 @@ body {
     border: 2px solid #030d52;
     margin: 15px;
 }
+#header{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+}
